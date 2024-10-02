@@ -42,7 +42,9 @@ dealership.orderCar(car);`
 Ve své implementaci vytvořte třídu Main, kde demonstrujete následující funkčnost:
 Sestavte alespoň dva různé automobily pomocí návrhového vzoru Builder.
 Tyto automobily objednejte v autosalonu, který je implementován jako Singleton.
-Zobrazte seznam všech objednaných automobilů pomocí metody `printOrders()`.
+Zobrazte seznam všech objednaných automobilů pomocí metody `printOrders().`
+
+V Main metodě nelze získat instance `CarDealershipSingleton` jiným způsobem než pomocí metody `getInstance()`. Nelze volat konstruktor ~~new CarDealershipSingleton()~~ v rámci main metody. 
 
 ### Očekávané chování:
 Při každé objednávce by měl být vypsán detail automobilu (např. motor, barva, kola).
